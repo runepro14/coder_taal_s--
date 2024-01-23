@@ -1,0 +1,12 @@
+open_window()
+
+window_size('300 300')
+
+window_text('hallo')
+
+window_name('ik  bent een window')
+
+window_button('hallo')
+
+
+if ('hallo'): create_popup('hallo')

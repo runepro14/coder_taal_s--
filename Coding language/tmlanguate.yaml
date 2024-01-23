@@ -1,0 +1,41 @@
+# syntaxes/your-language.tmLanguage.yaml
+
+# Specify the scope name for your language
+scopeName: source.s--
+
+# Define patterns for syntax highlighting
+patterns:
+  - name: keyword.s--
+    match: '\b(print|if|else|while)\b'
+
+  - name: variable.s--
+    match: '\b\w+\b'
+
+  - name: string.s--
+    begin: '"'(
+    end: '"')
+    patterns:
+      - match: '\\"'
+
+  - name: comment.s--
+    match: '#.*$'
+
+# Include the base scope for common features
+repository:
+  base:
+    - include: '#comment'
+    - include: '#string'
+
+# Define the grammar
+yamlGrammar:
+  patterns:
+    - include: '#base'
+    - include: '#keyword.s--'
+    - include: '#variable.s--'
+    - include: '#string.s--'
+    - include: '#comment.s--'
+
+# Provide information about the grammar
+name: s--
+fileTypes:
+  - s--

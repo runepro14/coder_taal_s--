@@ -1,0 +1,25 @@
+{
+    "name": "s--",
+    "displayName": "s--",
+    "version": "0.0.1",
+    "publisher": "game city studios",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "s--",
+                "aliases": ["s--", "s--"],
+                "extensions": [".s--"]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "s--",
+                "scopeName": "source.s--",
+                "path": "./s--.tmLanguage.json"
+            }
+        ]
+    }
+}

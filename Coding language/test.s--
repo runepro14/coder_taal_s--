@@ -1,0 +1,11 @@
+open_window()
+
+window_size('300 300')
+
+window_name('test window')
+
+window_text('welkom to my test app')
+
+window_button("test")
+
+if (test): create_popup('this is a text popup')
